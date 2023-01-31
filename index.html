@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=scr, initial-scale=1.0">
+    <title>Js practise</title>
+    
+</head>
+<body>
+    <script>
+        var a=20;
+        if(a>10) {
+            document.write("value of a is greater than 10");
+        }
+        var a=20;
+        if(a%2==0) {
+            document.write("<br/>a is even");
+        } else {
+            document.write("<br/>a is odd");
+        }
+        // switch
+        var grade ='a';
+        var result;
+        switch(grade) {
+            case 'a':
+                result="A Grade";
+                break;
+            case 'b':
+                result="B Grade";
+                break;
+            case 'c':
+                result="C Grade";
+                break;
+            default:
+                result="No Grade";
+        }
+        document.write("<br/>"+result)
+        // loop
+        for(i=1;i<=5;i++) {
+            document.write("<br/>"+i);
+        }
+        
+        var i=21;
+        do {
+            document.write("<br/>"+i);
+            i++;
+        }while(i<=25);
+
+        // function
+        function msg() {
+            alert("hello! this is a message");
+        }
+
+        function getcube(num){
+            alert(num*num*num);
+        }
+
+        //prompt
+        function fun(){
+            prompt("This is a prompt box","Hello World");
+        }
+    </script>
+    <input type="button" onclick="msg()" value="call function"/>
+    <input type="button" value="click" onclick="getcube(4)">
+    <br/>
+    <p>Click the following button to see the effect</p>
+    <form>
+        <input type="button" value="click me" onclick="fun()">
+    </form>
+    <script src="practice.js"></script>
+</body>
+</html>
