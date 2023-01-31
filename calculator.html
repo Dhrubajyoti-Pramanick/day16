@@ -12,32 +12,33 @@
     <section class="calculator-container">
         <form class="display">
             <input type="text" class="textview" id="result" placeholder="0">
+            <button onclick="clearScreen()" class="button-top" id="AC">C</button>
         </form>
         <div class="buttons">
             <form>
                 <ul>
-                    <li><button class="button" onclick="disp(7)" value='7' id="7">7</button></li>
-                    <li><button class="button" onclick="disp(8)" value="8" id="8">8</button></li>
-                    <li><button class="button" onclick="disp(9)" value="9" id="9">9</button></li>
-                    <li><button class="button" onclick="disp('+')" value="+" id="+">+</button></li>
+                    <li><button class="button" onclick="disp(7)" id="7">7</button></li>
+                    <li><button class="button" onclick="disp(8)" id="8">8</button></li>
+                    <li><button class="button" onclick="disp(9)" id="9">9</button></li>
+                    <li><button class="button" onclick="disp('+')" id="+">+</button></li>
                 </ul>
                 <ul>
-                    <li><button class="button" onclick="disp(4)" value="4" id="4">4</button></li>
-                    <li><button class="button" onclick="disp(5)" value="5" id="5">5</button></li>
-                    <li><button class="button" onclick="disp(6)" value="6" id="6">6</button></li>
-                    <li><button class="button" onclick="disp('-')" value="-" id="-">-</button></li>
+                    <li><button class="button" onclick="disp(4)" id="4">4</button></li>
+                    <li><button class="button" onclick="disp(5)" id="5">5</button></li>
+                    <li><button class="button" onclick="disp(6)" id="6">6</button></li>
+                    <li><button class="button" onclick="disp('-')" id="-">-</button></li>
                 </ul>
                 <ul>
-                    <li><button class="button" onclick="disp(1)" value="1" id="1">1</button></li>
-                    <li><button class="button" onclick="disp(2)" value="2" id="2">2</button></li>
-                    <li><button class="button" onclick="disp(3)" value="3" id="3">3</button></li>
-                    <li><button class="button" onclick="disp('*')" value="*" id="*">*</button></li>
+                    <li><button class="button" onclick="disp(1)" id="1">1</button></li>
+                    <li><button class="button" onclick="disp(2)" id="2">2</button></li>
+                    <li><button class="button" onclick="disp(3)" id="3">3</button></li>
+                    <li><button class="button" onclick="disp('*')" id="*">*</button></li>
                 </ul>
                 <ul>
-                    <li><button class="button" onclick="disp(0)" value="0" id="0">0</button></li>
-                    <li><button class="button" onclick="clearScreen('C')" id="C">C</button></li>
-                    <li><button class="button" onclick="calc()" value="=" id="=" class="result">=</button></li>
-                    <li><button class="button" onclick="disp('/')" value="/" id="/">/</button></li>
+                    <li><button class="button" onclick="disp(0)" id="0">0</button></li>
+                    <li><button class="button" onclick="disp('.')" id=".">.</button></li>
+                    <li><button class="button" onclick="calc()" id="=" class="result">=</button></li>
+                    <li><button class="button" onclick="disp('/')" id="/">/</button></li>
                 </ul>   
             </form>
         </div>
